@@ -11,3 +11,5 @@ prompt = """Classify sentiment as 1-5 (negative to positive):
 
 response = client.chat.completions.create(model="gpt-4o-mini", messages=[{"role": "user", "content": prompt}], max_completion_tokens=100)
 print(response.choices[0].message.content)
+
+
